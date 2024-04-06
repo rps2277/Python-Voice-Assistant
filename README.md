@@ -4,6 +4,8 @@ pip install -r requirements.txt
 
 # Voice Assistant Project
 
+https://github.com/rps2277/Alexa-Clone.git
+
 This Python project implements a simple voice assistant using speech recognition and text-to-speech conversion libraries.
 
 ## Dependencies
