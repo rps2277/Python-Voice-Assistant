@@ -1,0 +1,56 @@
+-------------------------------------------------------RPS-------------------------------------------------RPS-----------------------------------------RPS-----------------------------------------------------------------------------
+Voice Assistant Documentation
+
+Overview
+This Python program creates a simple voice assistant using speech recognition and text-to-speech conversion libraries. The assistant, named "Alexa", can perform various tasks such as playing music from YouTube, providing current time, 
+fetching information from Wikipedia, telling jokes, and opening files, applications, or folders on the computer upon voice command.
+
+1-Dependencies
+  speech_recognition: Library for performing speech recognition with support for multiple engines and APIs
+  pyttsx3: Text-to-speech conversion library that works offline
+  datetime: Library to work with date and time data
+  wikipedia: Library to fetch information from Wikipedia
+  pywhatkit: Library to perform various tasks with YouTube such as playing music
+  pyjokes: Library to generate random jokes
+
+2-Functionality
+  Listening for Commands:
+
+  The program continuously listens for voice commands using the computer's microphone.
+  It utilizes the speech_recognition library to capture and recognize speech.
+  Processing Commands:
+
+  Upon recognizing the wake word "Alexa", it interprets the following command.
+  It supports various commands related to playing music, fetching information, telling jokes, and opening files, applications, or folders.
+
+3-Task Execution:
+
+  Depending on the command received, the assistant performs the corresponding task.
+  Tasks include playing music from YouTube, fetching information from Wikipedia, providing the current time, telling jokes, and opening files or applications on the computer.
+
+4-Multithreading:
+
+  The assistant runs in a separate thread to continuously listen for commands without blocking the main program execution.
+  This allows the main thread to perform other tasks concurrently while the assistant is active.
+
+5-Supported Commands
+  Play Music: Command format: "Alexa, play [song name]".
+  Get Current Time: Command format: "Alexa, what's the time?".
+  Fetch Information from Wikipedia: Command format: "Alexa, who is [person]?".
+  Tell Joke: Command format: "Alexa, tell me a joke".
+
+6-Open File, Application, or Folder:
+  To open a file: "Alexa, open file [file name]".
+  To open an application: "Alexa, open application [application name]".
+  To open a folder: "Alexa, open folder [folder name]".
+
+7-Limitations
+  The program may not accurately recognize commands in noisy environments or due to speech variations.
+  It supports a limited set of commands and functionalities.
+  Future Improvements
+  Implement natural language processing for better command understanding.
+  Expand functionality to support additional tasks such as sending emails, setting reminders, etc.
+  Enhance error handling and robustness.
+
+**Author**
+This voice assistant program was developed by [Raj Pratap Singh] for educational purposes
